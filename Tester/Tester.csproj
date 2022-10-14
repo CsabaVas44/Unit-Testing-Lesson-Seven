@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MathFunction\lol.csproj" />
+    <ProjectReference Include="..\MathFunction\MathCucc.csproj" />
   </ItemGroup>
 
 </Project>

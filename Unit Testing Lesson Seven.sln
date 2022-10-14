@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit Testing Lesson Seven", "Unit Testing Lesson Seven\Unit Testing Lesson Seven.csproj", "{4F1A5861-E004-4CCF-AA3B-9AD1B6C89151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Unit Testing Lesson Seven", "Unit Testing Lesson Seven\Unit Testing Lesson Seven.csproj", "{4F1A5861-E004-4CCF-AA3B-9AD1B6C89151}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lol", "MathFunction\lol.csproj", "{00DBFFED-BD3C-46D8-8EDB-78EB46DB88F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathCucc", "MathFunction\MathCucc.csproj", "{00DBFFED-BD3C-46D8-8EDB-78EB46DB88F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{EBECC732-57CB-4242-99D3-0FA21ED850D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tester", "Tester\Tester.csproj", "{EBECC732-57CB-4242-99D3-0FA21ED850D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
