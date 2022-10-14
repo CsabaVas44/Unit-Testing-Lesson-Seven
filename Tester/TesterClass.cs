@@ -44,6 +44,35 @@ namespace Tester
 
             int result = mf.Max(20, 10);
             Assert.That(result, Is.EqualTo(20));
+
+            //lehet egysorban is kivételkezeléses tesztet csinálni
+            Assert.That(() => mf.CircleArea(10), Throws.TypeOf<ArgumentException>());
         }
     }
+
+    /*
+     Assert --> 1 db kimenet vizsgálata
+
+        Assert.that(result,IsEqualto(42)
+        Assert.That(result,IsNull)
+        Assert.That(is.lessthan())
+        isSameAs
+        throws.nothing
+        throws.[given exception]
+
+    GYŰJTEMÉNYEK VIZSGÁLATA
+
+        Tipikusan pl a Logic tesztje
+            kapunk egy eredménylistát, egyezik-e az elvárt listával
+        Gyűjtemények esetén az Nunit
+            Minden elemen elvárja az Equals() és a GetHashCode() felülírását
+            Ha egyezik minden azonos indexen a cucc, akkor a két gyűjtemény egyenlő
+
+            Assert.AreaEqual(object a, object b) használható erre
+        End.
+
+        
+
+     
+     */
 }
