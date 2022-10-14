@@ -25,7 +25,6 @@
             {
                 return 0;
             }
-            
         }
 
         public T Max<T>(T a, T b) where T : IComparable
@@ -38,6 +37,16 @@
             {
                 return a;
             }
+        }
+        
+        public int AdditionList(List<int> list)
+        {
+            int all = 0;
+            foreach(var item in list)
+            {
+                all += item
+            }
+            return all;
         }
     }
 }
