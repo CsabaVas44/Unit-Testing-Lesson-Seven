@@ -44,7 +44,7 @@
             int all = 0;
             foreach(var item in list)
             {
-                all += item
+                all += item;
             }
             return all;
         }
