@@ -6,11 +6,17 @@ namespace Tester
     [TestFixture]
     public class TesterClass
     {
+        MathFunctions mf;
+
+        [SetUp]
+        public void Init()
+        {
+            mf = new MathFunctions();
+        }
+
         [Test]
         public void AreaTest()
         {
-            //ARRANGE
-            MathFunctions mf = new MathFunctions();
             //ACT
             var result = mf.Area(5, 10);
             //ASSERT
@@ -20,8 +26,6 @@ namespace Tester
         [Test]
         public void AreaTestNegative()
         {
-            //ARRANGE
-            MathFunctions mf = new MathFunctions();
             //ACT
             var result = mf.Area(5, -5);
             //ASSERT
@@ -31,8 +35,6 @@ namespace Tester
         [Test]
         public void CirleAreaTest()
         {
-            MathFunctions mf = new MathFunctions();
-
             var result = mf.CircleArea(10);
 
             Assert.That(result, Is.EqualTo(100 * Math.PI));
@@ -40,13 +42,9 @@ namespace Tester
         [Test]
         public void MaxTest()
         {
-            MathFunctions mf = new MathFunctions();
 
             int result = mf.Max(20, 10);
             Assert.That(result, Is.EqualTo(20));
-
-            //lehet egysorban is kivételkezeléses tesztet csinálni
-            Assert.That(() => mf.CircleArea(10), Throws.TypeOf<ArgumentException>());
         }
     }
 
@@ -70,9 +68,8 @@ namespace Tester
 
             Assert.AreaEqual(object a, object b) használható erre
         End.
-
-        
-
      
      */
+
+
 }
